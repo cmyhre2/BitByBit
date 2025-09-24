@@ -1,6 +1,6 @@
 # BitByBit
 
-##Part I: Product Idea 
+Product Idea 
 
 Our software is a weather app. 
 
