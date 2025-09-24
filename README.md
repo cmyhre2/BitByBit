@@ -24,4 +24,8 @@ Product Idea
 - Severe weather alerts (storms, heat waves, tornadoes). 
 - Personalization options, such as favorite cities and outdoor activity suggestions. 
 - Push notifications for changes in weather conditions. 
-- A clean, user-friendly interface with optional widgets for quick access. (maybe) 
+- A clean, user-friendly interface with optional widgets for quick access. (maybe)
+
+
+Vision Statement
+Build a weather companion people trust — precise, local, and simple — that helps users make smarter day-to-day decisions and stay safe during severe conditions. We combine local sensors, ensemble models, and human-centered design to deliver timely guidance and actionable insights.
