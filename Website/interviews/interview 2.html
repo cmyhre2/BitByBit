@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interview — Outdoor Enthusiast</title>
+  <meta name="description" content="User interview: Outdoor Enthusiast" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3aa7ff;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,#071226 0%, #0b1630 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7ae0ff);display:flex;align-items:center;justify-content:center;color:#01233a;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:32px;line-height:1.05}
+    .tag{color:var(--accent);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:36px}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 6px 30px rgba(4,9,20,0.6);}
+    .lead{color:#d7e6f5;margin-top:10px}
+    .actions{margin-top:18px;display:flex;gap:12px}
+    .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#012033}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .weather-card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));padding:18px;border-radius:12px;color:#eaf6ff}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;color:var(--muted)}
+    section{margin-bottom:34px}
+    .vision{background:linear-gradient(180deg,rgba(58,167,255,0.06),transparent);border-left:4px solid rgba(58,167,255,0.18);padding:16px;border-radius:8px}
+    footer{color:var(--muted);font-size:14px;text-align:center;padding:30px 0}
+    .interview p{margin:10px 0}
+    .qa{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;margin-top:10px}
+    .q{color:var(--accent);font-weight:700}
+    .a{color:#d7e6f5}
+    @media (max-width:960px){.hero{grid-template-columns:1fr} .hero-right{order:-1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">WW</div>
+        <div>
+          <div style="font-weight:700;color:#eaf6ff">WeatherWise</div>
+          <div style="font-size:13px;color:var(--muted)">Interview archive</div>
+        </div>
+      </div>
+      <nav style="display:flex;gap:16px;align-items:center">
+        <a href="../index.html" style="color:var(--muted);text-decoration:none">Home</a>
+        <a href="../design_artifacts.html" style="color:var(--muted);text-decoration:none">Design Artifacts</a>
+        <a href="#notes" style="color:var(--muted);text-decoration:none">Notes</a>
+        <button class="btn btn-primary">Export</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="card">
+            <h1>Interview #2 — <span class="tag">Outdoor Enthusiast</span></h1>
+            <p class="lead">A deep-dive interview exploring how serious outdoor adventurers plan trips around weather, their tools, and what they wish weather apps did better.</p>
+
+            <div class="vision" style="margin-top:18px">
+              <strong>Context</strong>
+              <p style="margin:6px 0;color:#d7e6f5">This interview highlights the needs of a data-driven user who values precision, elevation-based forecasts, severe alerts, and real-world reliability in outdoor settings.
+                This interview was taken 10/7/25 by Joshua Henderson. 
+              </p>
+            </div>
+
+            <section id="interview" style="margin-top:18px" class="interview">
+              <h2 style="color:#eaf6ff">Transcript</h2>
+
+              <div class="qa">
+                <p class="q">Q: I see you're an avid hiker. How does weather factor into your planning?</p>
+                <p class="a">A: It's everything. I check weather obsessively before any trip - sometimes starting a week out. I need to know temperatures at different elevations, wind speeds, chance of storms, visibility. Bad weather data can literally be dangerous in the mountains.</p>
+
+                <p class="q">Q: What apps or tools do you currently use?</p>
+                <p class="a">A: I use like three different apps and cross-reference them. Weather Underground for hyper-local data, Mountain-Forecast for elevation-specific info, and then I check NOAA directly for serious trips. No single app does it all.</p>
+
+                <p class="q">Q: What would make you consolidate to just one app?</p>
+                <p class="a">A: Accuracy first - I need to trust it. Then I'd want elevation-based forecasts, real wind data not just "breezy," and trail-specific conditions if possible. Also, hour-by-hour breakdowns, not just daily summaries. If it says 30% chance of rain, I need to know if that's morning or afternoon.</p>
+
+                <p class="q">Q: What about features beyond just forecast data?</p>
+                <p class="a">A: Hmm. Historical data would be cool - like "this trail is usually X degrees colder than the base" based on patterns. Or crowd-sourced conditions - if someone just hiked that trail, what did they experience? Oh, and sunrise/sunset times with golden hour marked for photography.</p>
+
+                <p class="q">Q: How important are severe weather alerts for your activities?</p>
+                <p class="a">A: Critical. But they need to be location-specific. I don't care if there's a tornado warning two counties over. I need lightning alerts within like a 5-mile radius when I'm on an exposed ridge. And give me enough lead time to get to safety.</p>
+              </div>
+
+            </section>
+
+            <section id="notes" style="margin-top:18px">
+              <h2 style="color:#eaf6ff">Design notes</h2>
+              <div style="color:var(--muted);font-size:14px;margin-top:8px">
+                <ul>
+                  <li>Emphasize reliability and scientific accuracy of forecasts.</li>
+                  <li>Include elevation-aware and trail-specific weather modeling.</li>
+                  <li>Offer hour-by-hour breakdowns and historical weather patterns.</li>
+                  <li>Integrate community reports for real trail conditions and safety updates.</li>
+                  <li>Provide hyper-local lightning and severe weather alerts with early warnings.</li>
+                  <li>Display sunrise, sunset, and golden-hour timing for outdoor photographers.</li>
+                </ul>
+              </div>
+            </section>
+
+            <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+              <button class="btn btn-primary">Save to archive</button>
+              <button class="btn btn-ghost">Share</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="card weather-card">
+            <div style="margin-bottom:8px;font-weight:600;color:#eaf6ff">Interviewee snapshot</div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-size:14px;color:var(--muted)">Profile</div>
+                <div style="font-weight:700;font-size:20px;color:#eaf6ff">Outdoor Enthusiast</div>
+                <div style="color:var(--muted);margin-top:6px">Experienced hiker relying on multiple apps for accurate elevation and storm data when planning mountain trips.</div>
+              </div>
+              <div style="text-align:center">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="profile" style="width:98px;height:98px;object-fit:cover;border-radius:12px;">
+              </div>
+            </div>
+
+            <div class="meta">
+              <div>Alerts: Must be hyper-local, elevation-aware</div>
+              <div>Tools: Weather Underground, Mountain-Forecast, NOAA</div>
+            </div>
+
+            <div style="margin-top:12px;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px">
+              <strong style="display:block">Key takeaway</strong>
+              <div style="color:var(--muted);margin-top:6px">Outdoor users demand precision, multi-source validation, and safety-oriented alerts customized to their elevation and exact location.</div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px" class="card">
+            <h3 style="margin:0;color:#eaf6ff">Next steps</h3>
+            <ul style="color:var(--muted);margin-top:8px">
+              <li>Integrate elevation-based forecasting and wind detail API support.</li>
+              <li>Prototype trail condition reporting and photo timing features.</li>
+              <li>Test hyper-local alert accuracy with hikers and outdoor professionals.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div style="max-width:800px;margin:0 auto">
+        Interview archive — © <span id="year"></span>. <span style="color:var(--muted)">Privacy · Terms</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

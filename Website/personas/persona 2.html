@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Persona — The Outdoor Enthusiast</title>
+  <meta name="description" content="WeatherWise Persona: The Outdoor Enthusiast" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3aa7ff;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,#071226 0%, #0b1630 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7ae0ff);display:flex;align-items:center;justify-content:center;color:#01233a;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:32px;line-height:1.05}
+    .tag{color:var(--accent);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start;margin-bottom:36px}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 6px 30px rgba(4,9,20,0.6);}
+    .lead{color:#d7e6f5;margin-top:10px}
+    .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#012033}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    section{margin-bottom:34px}
+    .vision{background:linear-gradient(180deg,rgba(58,167,255,0.06),transparent);border-left:4px solid rgba(58,167,255,0.18);padding:16px;border-radius:8px}
+    footer{color:var(--muted);font-size:14px;text-align:center;padding:30px 0}
+    .persona-info p{margin:10px 0;color:#d7e6f5}
+    .meta{color:var(--muted);margin-top:8px}
+    @media (max-width:960px){.hero{grid-template-columns:1fr} .hero-right{order:-1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">WW</div>
+        <div>
+          <div style="font-weight:700;color:#eaf6ff">WeatherWise</div>
+          <div style="font-size:13px;color:var(--muted)">Persona Profiles</div>
+        </div>
+      </div>
+      <nav style="display:flex;gap:16px;align-items:center">
+        <a href="../index.html" style="color:var(--muted);text-decoration:none">Home</a>
+        <a href="../design_artifacts.html" style="color:var(--muted);text-decoration:none">Design Artifacts</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="card">
+            <h1>Persona 2 — <span class="tag">The Outdoor Enthusiast</span></h1>
+            <p class="lead">A persona representing safety-focused outdoor adventurers who demand precision, reliability, and actionable insights in weather forecasting.</p>
+
+            <div class="vision" style="margin-top:18px">
+              <strong>Overview</strong>
+              <p style="margin:6px 0;color:#d7e6f5">Marcus, age 34, is an avid hiker who makes frequent weekend trips to mountains and trails. He relies on multiple apps for accurate, elevation-based forecasts and precise data essential for safety in unpredictable environments.</p>
+            </div>
+
+            <section id="persona" style="margin-top:18px" class="persona-info">
+              <h2 style="color:#eaf6ff">Persona Details</h2>
+
+              <p><strong>Name:</strong> Marcus</p>
+              <p><strong>Age:</strong> 34</p>
+              <p><strong>Occupation:</strong> Outdoor Enthusiast / Hiker</p>
+              <p><strong>Location:</strong> Travels regionally to mountain trails</p>
+
+              <p><strong>Profile Summary:</strong> Marcus uses three weather apps (Weather Underground, Mountain-Forecast, and NOAA) to cross-reference data. No single app offers the elevation-based precision, wind data, or hourly forecasts he needs. He requires reliable, localized alerts to make real-time safety decisions during backcountry trips.</p>
+
+              <p><strong>Goals:</strong></p>
+              <ul style="color:var(--muted)">
+                <li>Access accurate, elevation-specific forecasts and trail conditions.</li>
+                <li>Receive real-time severe weather alerts with enough lead time to act.</li>
+                <li>Review historical weather patterns for trip planning.</li>
+              </ul>
+
+              <p><strong>Frustrations:</strong></p>
+              <ul style="color:var(--muted)">
+                <li>Inconsistent data across multiple apps.</li>
+                <li>Lack of elevation detail and trail-level specificity.</li>
+                <li>Alerts that are too broad or delayed to be actionable.</li>
+              </ul>
+
+              <p><strong>Needs:</strong></p>
+              <ul style="color:var(--muted)">
+                <li>Hyper-local, elevation-aware forecasts with real-time updates.</li>
+                <li>Historical trend analysis and confidence scores for better planning.</li>
+                <li>Professional-grade precision in a user-friendly interface.</li>
+              </ul>
+            </section>
+
+            <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+              <button class="btn btn-primary">Save Persona</button>
+              <button class="btn btn-ghost">Share</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="card">
+            <div style="margin-bottom:8px;font-weight:600;color:#eaf6ff">Persona Snapshot</div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-size:14px;color:var(--muted)">Name</div>
+                <div style="font-weight:700;font-size:20px;color:#eaf6ff">Marcus — The Outdoor Enthusiast</div>
+                <div style="color:var(--muted);margin-top:6px">A data-driven explorer who values safety, precision, and trustworthy insights when navigating unpredictable outdoor conditions.</div>
+              </div>
+              <div style="text-align:center">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Marcus portrait" style="width:98px;height:98px;object-fit:cover;border-radius:12px;">
+              </div>
+            </div>
+
+            <div class="meta">
+              <p><strong>Motivation:</strong> Stay safe and prepared in unpredictable mountain conditions.</p>
+              <p><strong>Tech Use:</strong> Uses multiple apps and cross-references data for accuracy.</p>
+            </div>
+
+            <div style="margin-top:12px;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px">
+              <strong style="display:block">Key takeaway</strong>
+              <div style="color:var(--muted);margin-top:6px">Marcus seeks professional-level reliability, real-time precision, and a single trusted app that can replace his multi-tool setup.</div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px" class="card">
+            <h3 style="margin:0;color:#eaf6ff">Design implications</h3>
+            <ul style="color:var(--muted);margin-top:8px">
+              <li>Integrate elevation-based forecasting and real-time micro-climate tracking.</li>
+              <li>Provide confidence metrics and historical comparisons for trip planning.</li>
+              <li>Implement proactive, location-specific severe weather alerts with early warnings.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div style="max-width:800px;margin:0 auto">
+        WeatherWise Personas — © <span id="year"></span>. <span style="color:var(--muted)">Privacy · Terms</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

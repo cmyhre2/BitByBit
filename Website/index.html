@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WeatherWise — Reliable local weather, smarter decisions</title>
+  <meta name="description" content="WeatherWise: clean, personalized, real-time weather for commuters, outdoor lovers, and professionals." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3aa7ff;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,#071226 0%, #0b1630 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7ae0ff);display:flex;align-items:center;justify-content:center;color:#01233a;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:32px;line-height:1.05}
+    .tag{color:var(--accent);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:36px}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 6px 30px rgba(4,9,20,0.6);}
+    .lead{color:#d7e6f5;margin-top:10px}
+    .actions{margin-top:18px;display:flex;gap:12px}
+    .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#012033}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .weather-card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));padding:18px;border-radius:12px;color:#eaf6ff}
+    .temp{font-size:56px;font-weight:700}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;color:var(--muted)}
+    section{margin-bottom:34px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{padding:18px;background:var(--glass);border-radius:10px}
+    .feature h3{margin:6px 0}
+    .feature p{margin:0;color:var(--muted)}
+    .vision{background:linear-gradient(180deg,rgba(58,167,255,0.06),transparent);border-left:4px solid rgba(58,167,255,0.18);padding:16px;border-radius:8px}
+    footer{color:var(--muted);font-size:14px;text-align:center;padding:30px 0}
+    @media (max-width:960px){.hero{grid-template-columns:1fr} .grid-3{grid-template-columns:1fr} .hero-right{order:-1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">WW</div>
+        <div>
+          <div style="font-weight:700;color:#eaf6ff">WeatherWise</div>
+          <div style="font-size:13px;color:var(--muted)">Smarter local forecasts</div>
+        </div>
+      </div>
+      <nav style="display:flex;gap:16px;align-items:center">
+        <a href="design_artifacts.html" style="color:var(--muted);text-decoration:none">Design Artifacts</a>
+        <a href="#features" style="color:var(--muted);text-decoration:none">Features</a>
+        <a href="#pitch" style="color:var(--muted);text-decoration:none">Pitch</a>
+        <button class="btn btn-primary">Get Early Access</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="card">
+            <h1>WeatherWise — <span class="tag">Know more. Do more.</span></h1>
+            <p class="lead">Clean, personalized weather forecasts with reliable alerts, tailored for commuters, outdoor lovers, professionals, and power users.</p>
+
+            <div class="vision" style="margin-top:18px">
+              <strong>Product vision</strong>
+              <p style="margin:6px 0;color:#d7e6f5">Build a weather companion people trust — precise, local, and simple — that helps users make smarter day-to-day decisions and stay safe during severe conditions. We combine local sensors, ensemble models, and human-centered design to deliver timely guidance and actionable insights.</p>
+            </div>
+
+            <div style="margin-top:18px;color:var(--muted);font-size:14px">
+              <strong>Tagline</strong>
+              <div>WeatherWise — Smarter local forecasts.</div>
+            </div>
+
+            <div style="margin-top:12px;color:var(--muted);font-size:14px">
+              <strong>Brief description</strong>
+              <p style="margin:6px 0;color:#d7e6f5">WeatherWise is a cross-platform weather app delivering real-time conditions, trusted multi-day forecasts, and customizable alerts — designed to help individuals and businesses plan around the weather.</p>
+            </div>
+
+            <div style="margin-top:12px;color:var(--muted);font-size:14px">
+              <strong>Who it's designed for</strong>
+              <ul style="color:var(--muted);margin-top:6px">
+                <li>Everyday users: commuters, students, parents needing reliable daily forecasts.</li>
+                <li>Outdoor enthusiasts: hikers, runners, and travelers wanting detailed hourly info.</li>
+                <li>Professionals: event planners, farmers, construction managers who need alerts and planning tools.</li>
+                <li>Tech-savvy users: power users who benefit from location-based personalization and push notifications.</li>
+              </ul>
+            </div>
+
+            <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+              <button class="btn btn-primary">Try the Demo</button>
+              <button class="btn btn-ghost">Read Docs</button>
+            </div>
+          </div>
+
+          <section id="features" style="margin-top:18px">
+            <h2 style="color:#eaf6ff">Most compelling features & benefits</h2>
+            <p style="color:var(--muted)">Features below are chosen to directly benefit our target users — each feature includes the user benefit so the value is clear.</p>
+
+            <div class="grid-3" style="margin-top:12px">
+              <div class="feature">
+                <strong>Real-time weather updates</strong>
+                <h3>Live temp, humidity & wind</h3>
+                <p>Benefit: Make immediate decisions (commute choice, outdoor start time) using station-synced live data and rapid refresh.</p>
+              </div>
+              <div class="feature">
+                <strong>7–10 day forecasts</strong>
+                <h3>Hourly & daily planning</h3>
+                <p>Benefit: Prepare for multi-day plans and weekend events with detailed hourly breakdowns and trend insights.</p>
+              </div>
+              <div class="feature">
+                <strong>Severe weather alerts</strong>
+                <h3>Storms, heat waves, tornadoes</h3>
+                <p>Benefit: Receive early, actionable alerts to protect people and assets — crucial for event planners and farmers.</p>
+              </div>
+            </div>
+
+            <div class="grid-3" style="margin-top:12px">
+              <div class="feature">
+                <strong>Personalization & favorites</strong>
+                <h3>Saved cities & preferences</h3>
+                <p>Benefit: Quickly check multiple locations (home, work, travel destinations) and get tailored notifications.</p>
+              </div>
+              <div class="feature">
+                <strong>Activity suggestions</strong>
+                <h3>Plan around the weather</h3>
+                <p>Benefit: Know the best windows for hiking, running, or scheduling outdoor events based on forecast confidence.</p>
+              </div>
+              <div class="feature">
+                <strong>Push notifications & widgets</strong>
+                <h3>Always informed</h3>
+                <p>Benefit: Instant changes to weather conditions delivered to your lock screen and home screen for fast glanceability.</p>
+              </div>
+            </div>
+
+            <div style="margin-top:16px" class="card">
+              <strong>Privacy & data</strong>
+              <p style="color:var(--muted);margin-top:8px">Privacy-first approach: opt-in location services, clear data use explanations, and the ability to delete account data at any time.</p>
+            </div>
+          </section>
+        </div>
+
+        <aside class="hero-right">
+          <div class="card weather-card">
+            <div style="margin-bottom:8px;font-weight:600;color:#eaf6ff">Example Image</div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-size:14px;color:var(--muted)">Louisville, KY</div>
+                <div class="temp">72&deg;F</div>
+                <div style="color:var(--muted);margin-top:6px">Partly cloudy — feels like 74&deg;F</div>
+              </div>
+              <div style="text-align:center">
+                <img src="https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="cloudy icon" style="width:98px;height:98px;object-fit:cover;border-radius:12px;">
+              </div>
+            </div>
+            <div class="meta">
+              <div>Humidity: 68%</div>
+              <div>Wind: 8 mph</div>
+            </div>
+            <div style="margin-top:12px;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px">
+              <strong style="display:block">Next 12 hours</strong>
+              <div style="display:flex;gap:8px;margin-top:8px;overflow:auto">
+                <div style="min-width:78px;text-align:center;color:var(--muted)">3 PM<br/><strong>74&deg;</strong></div>
+                <div style="min-width:78px;text-align:center;color:var(--muted)">6 PM<br/><strong>70&deg;</strong></div>
+                <div style="min-width:78px;text-align:center;color:var(--muted)">9 PM<br/><strong>66&deg;</strong></div>
+                <div style="min-width:78px;text-align:center;color:var(--muted)">12 AM<br/><strong>63&deg;</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px" class="card">
+            <h3 style="margin:0;color:#eaf6ff">Why people pick WeatherWise</h3>
+            <ul style="color:var(--muted);margin-top:8px">
+              <li>Clear, distraction-free UI that surfaces only what matters.</li>
+              <li>Local sensors + global models for improved accuracy.</li>
+              <li>Custom alerts tuned to your lifestyle and locations.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section id="pitch">
+        <h2 style="color:#eaf6ff">Pitch video</h2>
+        <p style="color:var(--muted)">Watch a short 90-second pitch that explains our product, target users, and go-to-market plan. </p>
+        <div style="margin-top:12px;display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap">
+          <div style="flex:1;min-width:320px" class="card">
+            <iframe width="100%" height="220" src="https://www.youtube.com/embed/snrI5TfDcgw" title="WeatherWise pitch" frameborder="0" allowfullscreen style="border-radius:8px"></iframe>
+          </div>
+          <div style="min-width:260px">
+            <div class="card">
+              <strong>Quick pitch highlights</strong>
+              <ul style="color:var(--muted);margin-top:8px">
+                <li>Problem: People lack localized, actionable forecasts they can trust.</li>
+                <li>Solution: WeatherWise — local sensors + model ensembles + beautiful UI.</li>
+                <li>Market: Commuters, outdoors, and professionals; subscription + API for businesses.</li>
+                <li>Call to action: Sign up for early access & pilot partnerships.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div style="max-width:800px;margin:0 auto">
+        Built with ☀️ by WeatherWise — © <span id="year"></span>. <span style="color:var(--muted)">Privacy · Terms</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

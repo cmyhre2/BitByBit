@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Persona — The Tech-Savvy Professional</title>
+  <meta name="description" content="WeatherWise Persona: The Tech-Savvy Professional" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3aa7ff;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,#071226 0%, #0b1630 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7ae0ff);display:flex;align-items:center;justify-content:center;color:#01233a;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:32px;line-height:1.05}
+    .tag{color:var(--accent);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start;margin-bottom:36px}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 6px 30px rgba(4,9,20,0.6);}
+    .lead{color:#d7e6f5;margin-top:10px}
+    .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#012033}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    section{margin-bottom:34px}
+    .vision{background:linear-gradient(180deg,rgba(58,167,255,0.06),transparent);border-left:4px solid rgba(58,167,255,0.18);padding:16px;border-radius:8px}
+    footer{color:var(--muted);font-size:14px;text-align:center;padding:30px 0}
+    .persona-info p{margin:10px 0;color:#d7e6f5}
+    .meta{color:var(--muted);margin-top:8px}
+    @media (max-width:960px){.hero{grid-template-columns:1fr} .hero-right{order:-1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">WW</div>
+        <div>
+          <div style="font-weight:700;color:#eaf6ff">WeatherWise</div>
+          <div style="font-size:13px;color:var(--muted)">Persona Profiles</div>
+        </div>
+      </div>
+      <nav style="display:flex;gap:16px;align-items:center">
+        <a href="../index.html" style="color:var(--muted);text-decoration:none">Home</a>
+        <a href="../design_artifacts.html" style="color:var(--muted);text-decoration:none">Design Artifacts</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="card">
+            <h1>Persona 5 — <span class="tag">The Tech-Savvy Professional</span></h1>
+            <p class="lead">A persona representing data-driven professionals who demand control, transparency, and seamless design in their weather technology.</p>
+
+            <div class="vision" style="margin-top:18px">
+              <strong>Overview</strong>
+              <p style="margin:6px 0;color:#d7e6f5">Alex, age 29, is a software developer who has tried about 20 different weather apps. He values customization, design, and privacy. He prefers transparency in accuracy, wants advanced visualizations, and expects a smart app that learns his patterns over time.</p>
+            </div>
+
+            <section id="persona" style="margin-top:18px" class="persona-info">
+              <h2 style="color:#eaf6ff">Persona Details</h2>
+
+              <p><strong>Name:</strong> Alex</p>
+              <p><strong>Age:</strong> 29</p>
+              <p><strong>Occupation:</strong> Software Developer</p>
+              <p><strong>Location:</strong> Urban area</p>
+
+              <p><strong>Profile Summary:</strong> Alex experiments with new weather apps and values apps that are transparent, customizable, and beautifully designed. He wants options to control every setting—from data sources to widget layouts—and expects deep accuracy insights like multiple model predictions and confidence levels. Privacy and smart personalization are top priorities.</p>
+
+              <p><strong>Goals:</strong></p>
+              <ul style="color:var(--muted)">
+                <li>Customize every aspect of the app experience.</li>
+                <li>Access transparent, multi-model data and confidence metrics.</li>
+                <li>Use AI-powered personalization that adapts to daily patterns.</li>
+              </ul>
+
+              <p><strong>Frustrations:</strong></p>
+              <ul style="color:var(--muted)">
+                <li>Generic weather apps with limited user control.</li>
+                <li>Poorly designed interfaces with cluttered or laggy visuals.</li>
+                <li>Hidden data collection and lack of privacy transparency.</li>
+              </ul>
+
+              <p><strong>Needs:</strong></p>
+              <ul style="color:var(--muted)">
+                <li>High-quality visuals like smooth radar and detailed graphs.</li>
+                <li>Progressive disclosure: simple main screen, deep-dive analytics when needed.</li>
+                <li>Privacy-first model with premium, ad-free options.</li>
+              </ul>
+            </section>
+
+            <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+              <button class="btn btn-primary">Save Persona</button>
+              <button class="btn btn-ghost">Share</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="card">
+            <div style="margin-bottom:8px;font-weight:600;color:#eaf6ff">Persona Snapshot</div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-size:14px;color:var(--muted)">Name</div>
+                <div style="font-weight:700;font-size:20px;color:#eaf6ff">Alex — The Tech-Savvy Professional</div>
+                <div style="color:var(--muted);margin-top:6px">A technology enthusiast who values personalization, precision, and privacy while expecting elegant, data-rich design in every app he uses.</div>
+              </div>
+              <div style="text-align:center">
+                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Alex portrait" style="width:98px;height:98px;object-fit:cover;border-radius:12px;">
+              </div>
+            </div>
+
+            <div class="meta">
+              <p><strong>Motivation:</strong> Combine personalization, aesthetics, and accuracy in one seamless weather experience.</p>
+              <p><strong>Tech Use:</strong> Uses multiple apps, advanced widgets, and wearable integrations.</p>
+            </div>
+
+            <div style="margin-top:12px;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px">
+              <strong style="display:block">Key takeaway</strong>
+              <div style="color:var(--muted);margin-top:6px">Alex expects total control, transparency, and smart personalization—he wants a premium, private, and customizable weather experience.</div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px" class="card">
+            <h3 style="margin:0;color:#eaf6ff">Design implications</h3>
+            <ul style="color:var(--muted);margin-top:8px">
+              <li>Offer extensive customization for data, widgets, and notifications.</li>
+              <li>Integrate AI-driven personalization that adapts to user habits.</li>
+              <li>Display accuracy confidence and model comparison visuals clearly.</li>
+              <li>Provide privacy-first, subscription-based options.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div style="max-width:800px;margin:0 auto">
+        WeatherWise Personas — © <span id="year"></span>. <span style="color:var(--muted)">Privacy · Terms</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

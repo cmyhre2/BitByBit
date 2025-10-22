@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interview — Morning Commuter</title>
+  <meta name="description" content="User interview: Morning Commuter" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3aa7ff;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,#071226 0%, #0b1630 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7ae0ff);display:flex;align-items:center;justify-content:center;color:#01233a;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:32px;line-height:1.05}
+    .tag{color:var(--accent);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:36px}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 6px 30px rgba(4,9,20,0.6);}
+    .lead{color:#d7e6f5;margin-top:10px}
+    .actions{margin-top:18px;display:flex;gap:12px}
+    .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#012033}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .weather-card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));padding:18px;border-radius:12px;color:#eaf6ff}
+    .temp{font-size:56px;font-weight:700}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;color:var(--muted)}
+    section{margin-bottom:34px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{padding:18px;background:var(--glass);border-radius:10px}
+    .feature h3{margin:6px 0}
+    .feature p{margin:0;color:var(--muted)}
+    .vision{background:linear-gradient(180deg,rgba(58,167,255,0.06),transparent);border-left:4px solid rgba(58,167,255,0.18);padding:16px;border-radius:8px}
+    footer{color:var(--muted);font-size:14px;text-align:center;padding:30px 0}
+    .interview p{margin:10px 0}
+    .qa{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;margin-top:10px}
+    .q{color:var(--accent);font-weight:700}
+    .a{color:#d7e6f5}
+    @media (max-width:960px){.hero{grid-template-columns:1fr} .grid-3{grid-template-columns:1fr} .hero-right{order:-1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">WW</div>
+        <div>
+          <div style="font-weight:700;color:#eaf6ff">WeatherWise</div>
+          <div style="font-size:13px;color:var(--muted)">Interview archive</div>
+        </div>
+      </div>
+      <nav style="display:flex;gap:16px;align-items:center">
+        <a href="../index.html" style="color:var(--muted);text-decoration:none">Home</a>
+        <a href="../design_artifacts.html" style="color:var(--muted);text-decoration:none">Design Artifacts</a>
+        <a href="#notes" style="color:var(--muted);text-decoration:none">Notes</a>
+        <button class="btn btn-primary">Export</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="card">
+            <h1>Interview #1 — <span class="tag">Morning Commuter</span></h1>
+            <p class="lead">A short user interview capturing how a typical commuter checks weather and what they'd want from a better weather app.</p>
+
+            <div class="vision" style="margin-top:18px">
+              <strong>Context</strong>
+              <p style="margin:6px 0;color:#d7e6f5">This interview focuses on everyday needs: quick glanceability, commute-aware alerts, multi-location awareness, and actionable advice (e.g., what to wear).
+                This interview was taken 10/6/25 by Chris Myhre.
+              </p>
+            </div>
+
+            <section id="interview" style="margin-top:18px" class="interview">
+              <h2 style="color:#eaf6ff">Transcript</h2>
+
+              <div class="qa">
+                <p class="q">Q: Thanks for taking the time to chat. Can you tell me a bit about how you currently check the weather?</p>
+                <p class="a">A: Sure! I usually just glance at my iPhone's default weather app while I'm getting ready. Sometimes I'll check again before I leave to see if I need an umbrella or a jacket.</p>
+
+                <p class="q">Q: What works well about that routine?</p>
+                <p class="a">A: It's quick, I guess. It's right there on my phone. But honestly, it's wrong a lot. It'll say sunny and then I'm caught in rain by 3pm.</p>
+
+                <p class="q">Q: That sounds frustrating. If you could design your perfect weather app, what would it do differently?</p>
+                <p class="a">A: I'd love something that tells me "hey, it's going to rain during your commute home, bring an umbrella." Like, don't just tell me it's going to rain sometime today - tell me when it matters for me. Also, I drive 30 minutes to work, and the weather can be totally different there than at my house. I'd want it to know both locations.</p>
+
+                <p class="q">Q: What about notifications - do you want the app reaching out to you, or would you rather check it yourself?</p>
+                <p class="a">A: Notifications are fine, but only if they're actually useful. I don't need to know it's 72 degrees. I need to know if something is changing that affects my plans. Like "rain starting in 20 minutes" when I'm about to leave work.</p>
+
+                <p class="q">Q: Anything else you wish weather apps did better?</p>
+                <p class="a">A: Yeah - just be more accurate! And maybe tell me what to wear? Like "light jacket recommended" instead of making me figure out what 58 degrees feels like.</p>
+              </div>
+
+            </section>
+
+            <section id="notes" style="margin-top:18px">
+              <h2 style="color:#eaf6ff">Design notes</h2>
+              <div style="color:var(--muted);font-size:14px;margin-top:8px">
+                <ul>
+                  <li>Priority: commute-aware, time-specific alerts rather than generic daily summaries.</li>
+                  <li>Support multiple saved locations (home, work) and compare forecasts side-by-side.</li>
+                  <li>Push notifications only for meaningful changes (rain during commute, rapid temp shifts, severe alerts).</li>
+                  <li>Human-friendly advisories ("light jacket recommended", "umbrella for evening commute").</li>
+                </ul>
+              </div>
+            </section>
+
+            <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+              <button class="btn btn-primary">Save to archive</button>
+              <button class="btn btn-ghost">Share</button>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="hero-right">
+          <div class="card weather-card">
+            <div style="margin-bottom:8px;font-weight:600;color:#eaf6ff">Interviewee snapshot</div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-size:14px;color:var(--muted)">Profile</div>
+                <div style="font-weight:700;font-size:20px;color:#eaf6ff">Morning Commuter</div>
+                <div style="color:var(--muted);margin-top:6px">Typical routine: checks phone app while getting ready; drives ~30 minutes to work</div>
+              </div>
+              <div style="text-align:center">
+                <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="profile" style="width:98px;height:98px;object-fit:cover;border-radius:12px;">
+              </div>
+            </div>
+
+            <div class="meta">
+              <div>Notifications: Prefers only meaningful alerts</div>
+              <div>Preferences: Commute-aware, multi-location, actionable advice</div>
+            </div>
+
+            <div style="margin-top:12px;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px">
+              <strong style="display:block">Key takeaway</strong>
+              <div style="color:var(--muted);margin-top:6px">Users want weather information that ties to their schedule and locations, and that tells them what to do (umbrella, jacket), not raw numbers.</div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px" class="card">
+            <h3 style="margin:0;color:#eaf6ff">Next steps</h3>
+            <ul style="color:var(--muted);margin-top:8px">
+              <li>Prototype commute-aware alert UI and test with local users.</li>
+              <li>Implement multi-location comparison in the app's home view.</li>
+              <li>Add simple clothing/advice layer driven by temp+precipitation rules.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="max-width:800px;margin:0 auto">
+        Interview archive — © <span id="year"></span>. <span style="color:var(--muted)">Privacy · Terms</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

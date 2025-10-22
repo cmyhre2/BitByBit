@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interview — Parent/Family Organizer</title>
+  <meta name="description" content="User interview: Parent/Family Organizer" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3aa7ff;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,#071226 0%, #0b1630 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7ae0ff);display:flex;align-items:center;justify-content:center;color:#01233a;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:32px;line-height:1.05}
+    .tag{color:var(--accent);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:36px}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 6px 30px rgba(4,9,20,0.6);}
+    .lead{color:#d7e6f5;margin-top:10px}
+    .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#012033}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .weather-card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));padding:18px;border-radius:12px;color:#eaf6ff}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;color:var(--muted)}
+    section{margin-bottom:34px}
+    .vision{background:linear-gradient(180deg,rgba(58,167,255,0.06),transparent);border-left:4px solid rgba(58,167,255,0.18);padding:16px;border-radius:8px}
+    footer{color:var(--muted);font-size:14px;text-align:center;padding:30px 0}
+    .interview p{margin:10px 0}
+    .qa{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;margin-top:10px}
+    .q{color:var(--accent);font-weight:700}
+    .a{color:#d7e6f5}
+    @media (max-width:960px){.hero{grid-template-columns:1fr} .hero-right{order:-1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">WW</div>
+        <div>
+          <div style="font-weight:700;color:#eaf6ff">WeatherWise</div>
+          <div style="font-size:13px;color:var(--muted)">Interview archive</div>
+        </div>
+      </div>
+      <nav style="display:flex;gap:16px;align-items:center">
+        <a href="../index.html" style="color:var(--muted);text-decoration:none">Home</a>
+        <a href="../design_artifacts.html" style="color:var(--muted);text-decoration:none">Design Artifacts</a>
+        <a href="#notes" style="color:var(--muted);text-decoration:none">Notes</a>
+        <button class="btn btn-primary">Export</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="card">
+            <h1>Interview #3 — <span class="tag">Parent/Family Organizer</span></h1>
+            <p class="lead">A detailed interview capturing how parents manage daily family plans around weather and what they'd want from a smarter, family-friendly forecast app.</p>
+
+            <div class="vision" style="margin-top:18px">
+              <strong>Context</strong>
+              <p style="margin:6px 0;color:#d7e6f5">This interview explores the challenges of busy parents juggling multiple schedules and how weather apps can better support family decision-making through actionable insights and smart reminders.
+                This interview was taken 10/10/25 by Jaleah Beason.
+              </p>
+            </div>
+
+            <section id="interview" style="margin-top:18px" class="interview">
+              <h2 style="color:#eaf6ff">Transcript</h2>
+
+              <div class="qa">
+                <p class="q">Q: How does weather impact your daily planning with kids?</p>
+                <p class="a">A: Oh my gosh, constantly. I'm planning outfits for three kids, deciding if soccer practice will happen, figuring out if we can go to the park after school. Weather basically dictates our whole day.</p>
+
+                <p class="q">Q: What's your current weather-checking routine?</p>
+                <p class="a">A: I check it first thing in the morning, then probably 3-4 more times during the day as plans develop. I use the Apple weather app mostly, but I also get texts from the school district about weather delays or cancellations.</p>
+
+                <p class="q">Q: What frustrates you about current weather apps?</p>
+                <p class="a">A: They're not designed for planning a family's day. I don't just need to know the forecast - I need to know "will my kids need jackets at 3pm pickup?" or "will little league be canceled?" I'm constantly doing mental math, like okay it says 40% rain at 5pm, do I pack rain gear for practice or not?</p>
+
+                <p class="q">Q: If you could wave a magic wand, what would your ideal weather app do?</p>
+                <p class="a">A: It would be more... advisory? Like "pack layers - big temperature swing today" or "outdoor activities looking good until 4pm." Also, I'd love activity-specific forecasts - is it good park weather? Pool weather? Maybe even integrate with my calendar and warn me if weather conflicts with our plans.</p>
+
+                <p class="q">Q: What about widgets or quick-access features?</p>
+                <p class="a">A: Yes! I want to glance at my home screen and immediately see what I need to know. Not just temperature - like a little visual that says "rain gear needed at 3pm" with an umbrella icon. Make it brain-dead simple because I'm usually doing five things at once.</p>
+
+                <p class="q">Q: How do you feel about weather notifications?</p>
+                <p class="a">A: Love them when they're useful, hate them when they're not. Don't tell me "it's sunny!" - I have windows. But DO tell me if weather is about to mess up my day. "Rain starting in 30 minutes" when I'm about to take kids to the park? Perfect.</p>
+              </div>
+
+            </section>
+
+            <section id="notes" style="margin-top:18px">
+              <h2 style="color:#eaf6ff">Design notes</h2>
+              <div style="color:var(--muted);font-size:14px;margin-top:8px">
+                <ul>
+                  <li>Focus on family-oriented, advisory-style forecasts rather than raw data.</li>
+                  <li>Integrate activity-specific and time-aware guidance (e.g., school pickup, sports, playtime).</li>
+                  <li>Enable calendar syncing for proactive weather conflict alerts.</li>
+                  <li>Design visual, low-effort widgets for quick daily context.</li>
+                  <li>Send actionable notifications that highlight meaningful changes only.</li>
+                  <li>Include outfit and gear suggestions based on temperature swings and precipitation.</li>
+                </ul>
+              </div>
+            </section>
+
+            <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+              <button class="btn btn-primary">Save to archive</button>
+              <button class="btn btn-ghost">Share</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="card weather-card">
+            <div style="margin-bottom:8px;font-weight:600;color:#eaf6ff">Interviewee snapshot</div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-size:14px;color:var(--muted)">Profile</div>
+                <div style="font-weight:700;font-size:20px;color:#eaf6ff">Parent/Family Organizer</div>
+                <div style="color:var(--muted);margin-top:6px">Busy parent managing multiple kids’ schedules, relying on quick, clear weather insights to plan daily activities and logistics.</div>
+              </div>
+              <div style="text-align:center">
+                <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="profile" style="width:98px;height:98px;object-fit:cover;border-radius:12px;">
+              </div>
+            </div>
+
+            <div class="meta">
+              <div>Notifications: Only when plans are affected</div>
+              <div>Needs: Family planning, activity-based context</div>
+            </div>
+
+            <div style="margin-top:12px;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px">
+              <strong style="display:block">Key takeaway</strong>
+              <div style="color:var(--muted);margin-top:6px">Parents want weather apps that simplify complex planning into actionable advice—what to wear, when to go, and how weather will impact the day’s schedule.</div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px" class="card">
+            <h3 style="margin:0;color:#eaf6ff">Next steps</h3>
+            <ul style="color:var(--muted);margin-top:8px">
+              <li>Prototype “advisory” forecast cards (e.g., outfit, activity, timing).</li>
+              <li>Develop family calendar integration for automated conflict detection.</li>
+              <li>Test widget and quick-access dashboard designs with multitasking users.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div style="max-width:800px;margin:0 auto">
+        Interview archive — © <span id="year"></span>. <span style="color:var(--muted)">Privacy · Terms</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

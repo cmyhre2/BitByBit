@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interview — Tech-Savvy Professional</title>
+  <meta name="description" content="User interview: Tech-Savvy Professional" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3aa7ff;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,#071226 0%, #0b1630 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7ae0ff);display:flex;align-items:center;justify-content:center;color:#01233a;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:32px;line-height:1.05}
+    .tag{color:var(--accent);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:36px}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 6px 30px rgba(4,9,20,0.6);}
+    .lead{color:#d7e6f5;margin-top:10px}
+    .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#012033}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .weather-card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));padding:18px;border-radius:12px;color:#eaf6ff}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;color:var(--muted)}
+    section{margin-bottom:34px}
+    .vision{background:linear-gradient(180deg,rgba(58,167,255,0.06),transparent);border-left:4px solid rgba(58,167,255,0.18);padding:16px;border-radius:8px}
+    footer{color:var(--muted);font-size:14px;text-align:center;padding:30px 0}
+    .interview p{margin:10px 0}
+    .qa{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;margin-top:10px}
+    .q{color:var(--accent);font-weight:700}
+    .a{color:#d7e6f5}
+    @media (max-width:960px){.hero{grid-template-columns:1fr} .hero-right{order:-1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">WW</div>
+        <div>
+          <div style="font-weight:700;color:#eaf6ff">WeatherWise</div>
+          <div style="font-size:13px;color:var(--muted)">Interview archive</div>
+        </div>
+      </div>
+      <nav style="display:flex;gap:16px;align-items:center">
+        <a href="../index.html" style="color:var(--muted);text-decoration:none">Home</a>
+        <a href="../design_artifacts.html" style="color:var(--muted);text-decoration:none">Design Artifacts</a>
+        <a href="#notes" style="color:var(--muted);text-decoration:none">Notes</a>
+        <button class="btn btn-primary">Export</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="card">
+            <h1>Interview #5 — <span class="tag">Tech-Savvy Professional</span></h1>
+            <p class="lead">An interview with a technology-forward weather app user who values customization, transparency, and intelligent, personalized design.</p>
+
+            <div class="vision" style="margin-top:18px">
+              <strong>Context</strong>
+              <p style="margin:6px 0;color:#d7e6f5">This interview highlights the expectations of a power user familiar with multiple weather apps, focusing on design, data integrity, user control, and adaptive intelligence.
+                This interview was taken 10/17/25 by Joshua Henderson.
+              </p>
+            </div>
+
+            <section id="interview" style="margin-top:18px" class="interview">
+              <h2 style="color:#eaf6ff">Transcript</h2>
+
+              <div class="qa">
+                <p class="q">Q: How do you currently interact with weather information?</p>
+                <p class="a">A: I've tried probably 20 different weather apps. Currently using Dark Sky - well, what's left of it - and Carrot Weather. I like apps with personality and customization. I also have a weather widget on my Apple Watch.</p>
+
+                <p class="q">Q: What makes you switch between weather apps?</p>
+                <p class="a">A: I get bored, or I find something better. Most apps are just reskinned versions of the same NOAA data. I stick with ones that either have better accuracy, better UI, or unique features.</p>
+
+                <p class="q">Q: What would keep you loyal to one weather app?</p>
+                <p class="a">A: Make it feel personal. I want to customize everything - units, data sources, notification triggers, widget layouts. Let me choose which data provider to use. And be transparent about accuracy - show me confidence levels, multiple model predictions.</p>
+
+                <p class="q">Q: You mentioned personality - what does that mean in a weather app?</p>
+                <p class="a">A: Some apps are too sterile. Others overdo it with cutesy language. I like apps that feel like they're designed by people who actually care. Good copywriting, smooth animations, maybe a little humor in notifications without being annoying.</p>
+
+                <p class="q">Q: What about data visualization and interface?</p>
+                <p class="a">A: Super important. I want beautiful graphs, radar that's actually smooth and responsive, and data density when I want it - like let me deep-dive into atmospheric pressure or dew point if I'm curious. But also keep the main view simple. Progressive disclosure, you know?</p>
+
+                <p class="q">Q: What's one feature you've never seen but wish existed?</p>
+                <p class="a">A: Hmm. Maybe AI-powered personal patterns? Like, the app learns that I always check weather at 7am before my run, and proactively surfaces "running conditions" at that time. Or it notices I travel to certain cities regularly and auto-adds them. Make it smart, not just reactive.</p>
+
+                <p class="q">Q: How important is privacy to you with a weather app?</p>
+                <p class="a">A: Very. Location tracking is necessary, but I want transparency about data usage. I'd rather pay for an app than have my location data sold to advertisers.</p>
+              </div>
+
+            </section>
+
+            <section id="notes" style="margin-top:18px">
+              <h2 style="color:#eaf6ff">Design notes</h2>
+              <div style="color:var(--muted);font-size:14px;margin-top:8px">
+                <ul>
+                  <li>Offer deep customization: user-selected data providers, metrics, and interface layout.</li>
+                  <li>Show model comparisons and confidence levels to build transparency and trust.</li>
+                  <li>Balance simplicity with progressive depth for advanced users.</li>
+                  <li>Integrate personality through tone, animations, and smart interaction design.</li>
+                  <li>Introduce AI-driven personalization based on habits and context (e.g., morning run forecasts).</li>
+                  <li>Emphasize strong privacy policies and paid tiers over ad-based models.</li>
+                </ul>
+              </div>
+            </section>
+
+            <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+              <button class="btn btn-primary">Save to archive</button>
+              <button class="btn btn-ghost">Share</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="card weather-card">
+            <div style="margin-bottom:8px;font-weight:600;color:#eaf6ff">Interviewee snapshot</div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-size:14px;color:var(--muted)">Profile</div>
+                <div style="font-weight:700;font-size:20px;color:#eaf6ff">Tech-Savvy Professional</div>
+                <div style="color:var(--muted);margin-top:6px">Frequent app user with high design standards and a focus on customization, performance, and privacy across digital tools.</div>
+              </div>
+              <div style="text-align:center">
+                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="profile" style="width:98px;height:98px;object-fit:cover;border-radius:12px;">
+              </div>
+            </div>
+
+            <div class="meta">
+              <div>Values: Customization, transparency, design</div>
+              <div>Concern: Data privacy</div>
+            </div>
+
+            <div style="margin-top:12px;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px">
+              <strong style="display:block">Key takeaway</strong>
+              <div style="color:var(--muted);margin-top:6px">Tech-savvy users expect full control, clean design, and ethical data practices — blending functionality, intelligence, and user delight in one adaptive experience.</div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px" class="card">
+            <h3 style="margin:0;color:#eaf6ff">Next steps</h3>
+            <ul style="color:var(--muted);margin-top:8px">
+              <li>Prototype user-customizable UI and data model options.</li>
+              <li>Develop AI-driven forecast personalization and habit learning.</li>
+              <li>Design privacy-first premium subscription structure.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div style="max-width:800px;margin:0 auto">
+        Interview archive — © <span id="year"></span>. <span style="color:var(--muted)">Privacy · Terms</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

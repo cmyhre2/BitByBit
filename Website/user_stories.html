@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>User Stories</title>
+  <meta name="description" content="WeatherWise Comprehensive User Stories" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3aa7ff;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,#071226 0%, #0b1630 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7ae0ff);display:flex;align-items:center;justify-content:center;color:#01233a;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:32px;line-height:1.05}
+    .tag{color:var(--accent);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start;margin-bottom:36px}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 6px 30px rgba(4,9,20,0.6);}
+    .lead{color:#d7e6f5;margin-top:10px}
+    .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#012033}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    section{margin-bottom:34px}
+    .vision{background:linear-gradient(180deg,rgba(58,167,255,0.06),transparent);border-left:4px solid rgba(58,167,255,0.18);padding:16px;border-radius:8px}
+    footer{color:var(--muted);font-size:14px;text-align:center;padding:30px 0}
+    .stories{color:var(--muted);font-size:15px;line-height:1.6}
+    .stories li{margin:8px 0}
+    @media (max-width:960px){.hero{grid-template-columns:1fr} .hero-right{order:-1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">WW</div>
+        <div>
+          <div style="font-weight:700;color:#eaf6ff">WeatherWise</div>
+          <div style="font-size:13px;color:var(--muted)">User Stories</div>
+        </div>
+      </div>
+      <nav style="display:flex;gap:16px;align-items:center">
+        <a href="index.html" style="color:var(--muted);text-decoration:none">Home</a>
+        <a href="design_artifacts.html" style="color:var(--muted);text-decoration:none">Design Artifacts</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="card">
+            <h1>Comprehensive User Stories</h1>
+            <p class="lead">A consolidated list of user stories gathered from research — organized to guide product features, priorities, and UX decisions across commuter, family, outdoor, event-planning, and tech-savvy user groups.</p>
+
+            <section id="stories" style="margin-top:18px">
+              <h2 style="color:#eaf6ff">User Stories</h2>
+              <ul class="stories">
+                <li>As a commuter, I want to see temperature forecasts for both my home and work locations so that I can dress appropriately for both places.</li>
+                <li>As a busy morning user, I want clothing recommendations based on the weather so that I don't have to interpret temperature data myself.</li>
+                <li>As someone planning my day, I want to know how temperature will change throughout the day so that I can decide on layering.</li>
+                <li>As a user checking weather while multitasking, I want information presented clearly at a glance so that I can quickly make decisions.</li>
+                <li>As a commuter, I want to set multiple important locations so that the app automatically shows me weather for places I care about.</li>
+                <li>As a commuter, I want time-specific rain alerts so that I know exactly when precipitation will affect my journey home.</li>
+                <li>As someone who values preparation, I want advance warning of weather changes so that I have time to grab necessary items.</li>
+                <li>As a user who dislikes getting wet, I want location-aware rain notifications so that I'm alerted about weather at my current position.</li>
+                <li>As someone with a regular schedule, I want the app to understand my routine so that alerts come at relevant times.</li>
+                <li>As a notification user, I want only actionable alerts so that I'm not bothered with irrelevant weather information.</li>
+
+                <li>As someone planning activities, I want to know the best time window for outdoor plans so that I can optimize my schedule.</li>
+                <li>As a weekend user, I want activity-specific weather guidance so that I know if conditions are suitable for what I want to do.</li>
+                <li>As a planner, I want to see when weather conditions will change so that I can time my activities appropriately.</li>
+                <li>As someone making spontaneous plans, I want quick yes/no guidance on weather suitability so that I can decide fast.</li>
+                <li>As a user, I want plain language weather summaries so that I don't have to interpret percentages and data myself.</li>
+
+                <li>As a hiker, I want elevation-specific temperature forecasts so that I can pack appropriate clothing for different altitudes.</li>
+                <li>As someone planning mountain activities, I want precise wind speed data so that I can assess safety conditions at exposed locations.</li>
+                <li>As an outdoor enthusiast, I want historical weather patterns for specific trails so that I can better predict actual conditions.</li>
+                <li>As a safety-conscious adventurer, I want detailed hourly forecasts so that I can plan my ascent and descent timing.</li>
+                <li>As a user planning trips in advance, I want long-range forecasts with confidence levels so that I can make informed go/no-go decisions.</li>
+                <li>As a hiker in exposed areas, I want real-time lightning alerts with distance information so that I can assess immediate danger.</li>
+                <li>As someone in the backcountry, I want alerts to include directional movement so that I know if threats are approaching.</li>
+                <li>As a safety-focused user, I want urgent notifications to be clearly marked so that I recognize life-threatening situations.</li>
+                <li>As an outdoor adventurer, I want hyper-local weather alerts so that I'm only notified about threats actually near me.</li>
+                <li>As someone on trails, I want alerts to include recommended actions so that I know the best safety response.</li>
+
+                <li>As a photographer, I want precise sunrise/sunset times with golden hour marked so that I can plan optimal shooting times.</li>
+                <li>As a parent, I want forward-looking weather guidance for specific times so that I can prepare my kids appropriately for the entire day.</li>
+                <li>As someone managing multiple children, I want simple clothing recommendations so that I can quickly get everyone ready.</li>
+                <li>As a busy morning user, I want a home screen widget that shows critical information at a glance so that I don't have to open the full app.</li>
+                <li>As a parent planning the day, I want to know about temperature changes so that I can pack layers for my kids.</li>
+                <li>As someone coordinating schedules, I want time-specific weather warnings so that I know what conditions to expect at pickup time.</li>
+
+                <li>As someone planning photo shoots, I want visibility and cloud cover predictions so that I know if conditions will be photogenic.</li>
+                <li>As a landscape photographer, I want weather forecasts tied to specific scenic locations so that I can choose the best spots.</li>
+                <li>As a user planning early morning activities, I want accurate forecasts for dawn conditions so that I'm not surprised by weather changes.</li>
+                <li>As someone investing time in photography trips, I want confidence scores on forecasts so that I can assess likelihood of good conditions.</li>
+
+                <li>As a parent coordinating activities, I want calendar integration so that the app can warn me about weather conflicts with scheduled events.</li>
+                <li>As someone managing kids' sports, I want advance notice of likely cancellations so that I can adjust my plans accordingly.</li>
+                <li>As a busy parent, I want proactive alerts about schedule impacts so that I'm not caught off-guard by weather changes.</li>
+                <li>As a family organizer, I want time-specific severe weather warnings so that I know exactly when dangerous conditions will occur.</li>
+                <li>As someone making decisions about kids' safety, I want clear guidance on activity suitability so that I can make informed choices.</li>
+                <li>As a parent making quick decisions, I want activity-specific weather assessments so that I know if conditions are suitable right now.</li>
+
+                <li>As someone with spontaneous plans, I want to see weather windows so that I know how much time we have before conditions change.</li>
+                <li>As a widget user, I want critical information visible without opening the app so that I can make fast decisions while multitasking.</li>
+                <li>As a parent, I want simple yes/no guidance on outdoor play so that I don't have to interpret weather data while managing kids.</li>
+                <li>As someone planning short outings, I want precise timing of weather changes so that we can get home before rain starts.</li>
+
+                <li>As an event planner, I want long-range forecasts with probability ranges so that I can make informed decisions weeks in advance.</li>
+                <li>As a professional making costly decisions, I want confidence levels displayed so that I understand the reliability of forecasts.</li>
+                <li>As someone planning outdoor events, I want historical weather data for specific dates so that I can assess typical conditions.</li>
+                <li>As a planner managing client expectations, I want honest probability ranges rather than false precision so that I can communicate risks accurately.</li>
+                <li>As a business user, I want to track how forecasts change over time so that I can adjust plans as predictions become more certain.</li>
+                <li>As an event planner, I want alerts when forecasts change significantly so that I can activate backup plans in time.</li>
+                <li>As someone managing logistics, I want specific data points like wind speeds so that I can make decisions about tent setups.</li>
+                <li>As a professional user, I want to set custom alert thresholds so that I'm notified when conditions cross critical decision points.</li>
+                <li>As someone coordinating vendors, I want advance warning of deteriorating conditions so that I have time to communicate changes.</li>
+                <li>As a planner with contingencies, I want actionable alerts that suggest specific responses so that I know what steps to take.</li>
+
+                <li>As an event planner, I want venue-specific weather data so that I get accurate forecasts for exact event locations.</li>
+                <li>As someone managing outdoor setups, I want microclimate information so that I understand how geography affects conditions.</li>
+                <li>As a professional user, I want to save venue locations so that I can quickly check forecasts for recurring event sites.</li>
+                <li>As someone making equipment decisions, I want specific wind and temperature data for venues so that I can plan heating/cooling needs.</li>
+                <li>As a planner comparing venues, I want to see typical weather patterns for different locations so that I can choose optimal sites.</li>
+
+                <li>As a tech-savvy user, I want the app to learn my routines using AI so that it proactively surfaces relevant information.</li>
+                <li>As someone with regular activities, I want predictive notifications that anticipate my needs so that I don't have to manually check.</li>
+                <li>As a runner, I want detailed current conditions including feels-like temperature and humidity so that I can assess comfort levels.</li>
+                <li>As a data-oriented user, I want specific metrics rather than vague descriptions so that I can make informed decisions.</li>
+                <li>As someone who values efficiency, I want the app to understand my patterns so that it automatically adapts to my lifestyle.</li>
+                <li>As a tech enthusiast, I want to see multiple weather model predictions so that I can compare different forecast approaches.</li>
+                <li>As a data-driven user, I want access to advanced metrics like atmospheric pressure so that I can analyze conditions in depth.</li>
+                <li>As someone who understands forecasting, I want confidence intervals displayed so that I can assess prediction reliability.</li>
+                <li>As a user who likes customization, I want progressive disclosure of information so that I can drill down into details when interested.</li>
+                <li>As someone comparing models, I want to choose preferred data sources so that I can see forecasts from the most accurate provider.</li>
+
+                <li>As a privacy-conscious user, I want transparent reporting of location access so that I know exactly when and how my data is used.</li>
+                <li>As someone who values control, I want clear privacy settings so that I can manage what information is collected.</li>
+                <li>As a tech-savvy professional, I want confirmation that data isn't shared with third parties so that I trust the app with my location.</li>
+                <li>As a paying customer, I want to see my subscription status so that I know I'm receiving premium privacy protections.</li>
+                <li>As someone who reads privacy policies, I want accessible information about data practices so that I can make informed consent decisions.</li>
+              </ul>
+            </section>
+
+            <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+              <button class="btn btn-primary">Save User Stories</button>
+              <button class="btn btn-ghost">Export</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="card">
+            <div style="margin-bottom:8px;font-weight:600;color:#eaf6ff">Collection Snapshot</div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-size:14px;color:var(--muted)">Scope</div>
+                <div style="font-weight:700;font-size:20px;color:#eaf6ff">Comprehensive User Stories</div>
+                <div style="color:var(--muted);margin-top:6px">An exhaustive list of feature-driven user stories to inform product backlog, UX flows, and prioritization for WeatherWise.</div>
+              </div>
+              <div style="text-align:center">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="User stories image" style="width:98px;height:98px;object-fit:cover;border-radius:12px;">
+              </div>
+            </div>
+
+            <div class="meta">
+              <p><strong>Primary benefit:</strong> Aligns cross-functional teams around user needs and feature opportunities.</p>
+              <p><strong>Usage:</strong> Product roadmaps, sprint planning, and design reviews.</p>
+            </div>
+
+            <div style="margin-top:12px;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px">
+              <strong style="display:block">Key takeaway</strong>
+              <div style="color:var(--muted);margin-top:6px">These user stories cover commuters, families, outdoor enthusiasts, photographers, event professionals, and tech-savvy users — providing a robust foundation for WeatherWise features.</div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px" class="card">
+            <h3 style="margin:0;color:#eaf6ff">Next steps</h3>
+            <ul style="color:var(--muted);margin-top:8px">
+              <li>Map stories to UX flows and prioritize by user impact.</li>
+              <li>Create acceptance criteria for high-priority stories.</li>
+              <li>Run quick prototypes with representative users for validation.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div style="max-width:800px;margin:0 auto">
+        WeatherWise — User Stories — © <span id="year"></span>. <span style="color:var(--muted)">Privacy · Terms</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

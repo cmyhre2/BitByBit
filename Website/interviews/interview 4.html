@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interview — Event Planner</title>
+  <meta name="description" content="User interview: Event Planner" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3aa7ff;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,#071226 0%, #0b1630 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7ae0ff);display:flex;align-items:center;justify-content:center;color:#01233a;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:32px;line-height:1.05}
+    .tag{color:var(--accent);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:36px}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 6px 30px rgba(4,9,20,0.6);}
+    .lead{color:#d7e6f5;margin-top:10px}
+    .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#012033}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .weather-card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));padding:18px;border-radius:12px;color:#eaf6ff}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;color:var(--muted)}
+    section{margin-bottom:34px}
+    .vision{background:linear-gradient(180deg,rgba(58,167,255,0.06),transparent);border-left:4px solid rgba(58,167,255,0.18);padding:16px;border-radius:8px}
+    footer{color:var(--muted);font-size:14px;text-align:center;padding:30px 0}
+    .interview p{margin:10px 0}
+    .qa{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;margin-top:10px}
+    .q{color:var(--accent);font-weight:700}
+    .a{color:#d7e6f5}
+    @media (max-width:960px){.hero{grid-template-columns:1fr} .hero-right{order:-1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">WW</div>
+        <div>
+          <div style="font-weight:700;color:#eaf6ff">WeatherWise</div>
+          <div style="font-size:13px;color:var(--muted)">Interview archive</div>
+        </div>
+      </div>
+      <nav style="display:flex;gap:16px;align-items:center">
+        <a href="../index.html" style="color:var(--muted);text-decoration:none">Home</a>
+        <a href="../design_artifacts.html" style="color:var(--muted);text-decoration:none">Design Artifacts</a>
+        <a href="#notes" style="color:var(--muted);text-decoration:none">Notes</a>
+        <button class="btn btn-primary">Export</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="card">
+            <h1>Interview #4 — <span class="tag">Event Planner</span></h1>
+            <p class="lead">An in-depth interview exploring how professional event planners depend on weather insights, their pain points, and their needs for long-range, high-confidence forecasting tools.</p>
+
+            <div class="vision" style="margin-top:18px">
+              <strong>Context</strong>
+              <p style="margin:6px 0;color:#d7e6f5">This interview reveals how critical weather precision is in event logistics, where timing, risk management, and financial stakes are all influenced by accurate, actionable forecasts.
+                This interview was taken 10/15/25 by Chris Myhre.
+              </p>
+            </div>
+
+            <section id="interview" style="margin-top:18px" class="interview">
+              <h2 style="color:#eaf6ff">Transcript</h2>
+
+              <div class="qa">
+                <p class="q">Q: Tell me about how weather impacts your work.</p>
+                <p class="a">A: Weather can make or break an event. I plan everything from corporate retreats to outdoor weddings, and I'm constantly watching forecasts weeks in advance. A wrong call can cost tens of thousands of dollars.</p>
+
+                <p class="q">Q: What weather tools do you rely on currently?</p>
+                <p class="a">A: I use a mix. Weather.com for general forecasting, specialized services for longer-range predictions, and I literally call local meteorologists for important events. I need something more reliable than consumer apps but more accessible than enterprise solutions.</p>
+
+                <p class="q">Q: What would make a weather app valuable for your professional needs?</p>
+                <p class="a">A: Long-range accuracy - even if it's just probability ranges. Like "65% chance of rain-free day" two weeks out. I can work with probabilities, I just need honest data. Also, micro-climate information - venues can have very different conditions than the general area forecast.</p>
+
+                <p class="q">Q: What specific data points matter most to you?</p>
+                <p class="a">A: Rain probability, obviously. But also wind speeds for tents, temperature ranges for catering decisions, humidity for outdoor setups, and UV index for daytime events. I need hourly breakdowns, not daily summaries.</p>
+
+                <p class="q">Q: What features would set an app apart for professional users like you?</p>
+                <p class="a">A: Historical comparison - "this day last year was X" or "typical weather for this date." Confidence scores for forecasts. Alerts when the forecast changes significantly - like if rain probability jumps from 20% to 60%. And maybe even scenario planning - "if we move the event 3 hours earlier, conditions improve by X%."</p>
+
+                <p class="q">Q: Would you pay for premium features?</p>
+                <p class="a">A: Absolutely, if it saves me even one disaster. Accuracy and professional features are worth real money in my industry.</p>
+              </div>
+
+            </section>
+
+            <section id="notes" style="margin-top:18px">
+              <h2 style="color:#eaf6ff">Design notes</h2>
+              <div style="color:var(--muted);font-size:14px;margin-top:8px">
+                <ul>
+                  <li>Provide long-range forecasts with probabilistic data for planning confidence.</li>
+                  <li>Include micro-climate and venue-specific forecasting options.</li>
+                  <li>Display hourly forecasts and environmental metrics (wind, humidity, UV, temperature).</li>
+                  <li>Offer historical weather patterns and typical-condition comparisons.</li>
+                  <li>Enable real-time forecast change alerts with confidence levels.</li>
+                  <li>Introduce scenario planning tools for schedule adjustment insights.</li>
+                  <li>Monetize through professional premium features aimed at event planners.</li>
+                </ul>
+              </div>
+            </section>
+
+            <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+              <button class="btn btn-primary">Save to archive</button>
+              <button class="btn btn-ghost">Share</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="card weather-card">
+            <div style="margin-bottom:8px;font-weight:600;color:#eaf6ff">Interviewee snapshot</div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-size:14px;color:var(--muted)">Profile</div>
+                <div style="font-weight:700;font-size:20px;color:#eaf6ff">Event Planner</div>
+                <div style="color:var(--muted);margin-top:6px">Professional event coordinator managing large-scale outdoor and indoor functions where forecast accuracy directly impacts budgets and logistics.</div>
+              </div>
+              <div style="text-align:center">
+                <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="profile" style="width:98px;height:98px;object-fit:cover;border-radius:12px;">
+              </div>
+            </div>
+
+            <div class="meta">
+              <div>Needs: Long-range accuracy, micro-climate data</div>
+              <div>Willingness: Pays for professional precision</div>
+            </div>
+
+            <div style="margin-top:12px;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px">
+              <strong style="display:block">Key takeaway</strong>
+              <div style="color:var(--muted);margin-top:6px">Event professionals need trustworthy, data-rich forecasts with confidence metrics and scenario tools that enable proactive decision-making and minimize costly risks.</div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px" class="card">
+            <h3 style="margin:0;color:#eaf6ff">Next steps</h3>
+            <ul style="color:var(--muted);margin-top:8px">
+              <li>Prototype forecast confidence and scenario comparison tools.</li>
+              <li>Test professional-grade forecasting tiers for business users.</li>
+              <li>Develop micro-climate mapping for venue-level conditions.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div style="max-width:800px;margin:0 auto">
+        Interview archive — © <span id="year"></span>. <span style="color:var(--muted)">Privacy · Terms</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
