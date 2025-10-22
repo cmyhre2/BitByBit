@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WeatherWise — User Stories by Feature</title>
+  <meta name="description" content="WeatherWise user stories organized by feature categories" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#3aa7ff;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Helvetica,Arial;color:#e6eef6;background:linear-gradient(180deg,#071226 0%, #0b1630 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7ae0ff);display:flex;align-items:center;justify-content:center;color:#01233a;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:32px;line-height:1.05}
+    .tag{color:var(--accent);font-weight:600}
+    section{margin-bottom:34px}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 6px 30px rgba(4,9,20,0.6);margin-bottom:24px}
+    .card h2{color:var(--accent);margin-top:0;margin-bottom:8px;font-size:22px}
+    ul{color:var(--muted);font-size:15px;line-height:1.6;margin:0;padding-left:20px}
+    li{margin:6px 0}
+    footer{color:var(--muted);font-size:14px;text-align:center;padding:30px 0;margin-top:40px;border-top:1px solid rgba(255,255,255,0.06)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">WW</div>
+        <div>
+          <div style="font-weight:700;color:#eaf6ff">WeatherWise</div>
+          <div style="font-size:13px;color:var(--muted)">User Stories by Feature</div>
+        </div>
+      </div>
+      <nav style="display:flex;gap:16px;align-items:center">
+        <a href="design_artifacts.html" style="color:var(--muted);text-decoration:none">Design Artifacts</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Feature List & User Stories Grouped by Feature Category</h1>
+      <p style="color:#d7e6f5;max-width:750px">This page organizes all 75 WeatherWise user stories into feature-based groups to guide product development and prioritize functionality across the app. Features are numbered by priority. Highest priority being #1 and lowest priority being #9.</p>
+
+      <section class="card">
+        <h2>🌤 Forecast Accuracy & Detail (#1)</h2>
+        <ul>
+          <li>As a commuter, I want to see temperature forecasts for both my home and work locations...</li>
+          <li>As someone planning my day, I want to know how temperature will change throughout the day...</li>
+          <li>As a commuter, I want to set multiple important locations...</li>
+          <li>As a hiker, I want elevation-specific temperature forecasts...</li>
+          <li>As someone planning mountain activities, I want precise wind speed data...</li>
+          <li>As an outdoor enthusiast, I want historical weather patterns for specific trails...</li>
+          <li>As a user planning trips in advance, I want long-range forecasts with confidence levels...</li>
+          <li>As a user planning early morning activities, I want accurate forecasts for dawn conditions...</li>
+          <li>As someone investing time in photography trips, I want confidence scores on forecasts...</li>
+          <li>As an event planner, I want venue-specific weather data...</li>
+          <li>As someone managing outdoor setups, I want microclimate information...</li>
+          <li>As someone making equipment decisions, I want specific wind and temperature data...</li>
+          <li>As a runner, I want detailed current conditions including feels-like temperature and humidity...</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>🧩 Interface & Accessibility (#2)</h2>
+        <ul>
+          <li>As a user checking weather while multitasking, I want information presented clearly at a glance...</li>
+          <li>As a busy morning user, I want a home screen widget that shows critical information...</li>
+          <li>As a widget user, I want critical information visible without opening the app...</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>🔔 Smart Notifications & Alerts (#3)</h2>
+        <ul>
+          <li>As a commuter, I want time-specific rain alerts...</li>
+          <li>As someone who values preparation, I want advance warning of weather changes...</li>
+          <li>As a user who dislikes getting wet, I want location-aware rain notifications...</li>
+          <li>As a notification user, I want only actionable alerts...</li>
+          <li>As a hiker in exposed areas, I want real-time lightning alerts...</li>
+          <li>As someone in the backcountry, I want alerts to include directional movement...</li>
+          <li>As a safety-focused user, I want urgent notifications to be clearly marked...</li>
+          <li>As an outdoor adventurer, I want hyper-local weather alerts...</li>
+          <li>As someone on trails, I want alerts to include recommended actions...</li>
+          <li>As someone coordinating schedules, I want time-specific weather warnings...</li>
+          <li>As a family organizer, I want time-specific severe weather warnings...</li>
+          <li>As an event planner, I want alerts when forecasts change significantly...</li>
+          <li>As a professional user, I want to set custom alert thresholds...</li>
+          <li>As someone coordinating vendors, I want advance warning of deteriorating conditions...</li>
+          <li>As a planner with contingencies, I want actionable alerts that suggest specific responses...</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>🧭 Outdoor Adventure & Safety (#4)</h2>
+        <ul>
+          <li>As a safety-conscious adventurer, I want detailed hourly forecasts...</li>
+          <li>As a photographer, I want precise sunrise/sunset times with golden hour marked...</li>
+          <li>As someone planning photo shoots, I want visibility and cloud cover predictions...</li>
+          <li>As a landscape photographer, I want weather forecasts tied to specific scenic locations...</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>🎯 Advisory & Recommendation System (#5)</h2>
+        <ul>
+          <li>As a busy morning user, I want clothing recommendations based on the weather...</li>
+          <li>As someone planning activities, I want to know the best time window for outdoor plans...</li>
+          <li>As a weekend user, I want activity-specific weather guidance...</li>
+          <li>As a planner, I want to see when weather conditions will change...</li>
+          <li>As someone making spontaneous plans, I want quick yes/no guidance on weather suitability...</li>
+          <li>As a parent, I want forward-looking weather guidance for specific times...</li>
+          <li>As someone managing multiple children, I want simple clothing recommendations...</li>
+          <li>As a parent planning the day, I want to know about temperature changes...</li>
+          <li>As someone making decisions about kids' safety, I want clear guidance on activity suitability...</li>
+          <li>As a parent making quick decisions, I want activity-specific weather assessments...</li>
+          <li>As someone with spontaneous plans, I want to see weather windows...</li>
+          <li>As a parent, I want simple yes/no guidance on outdoor play...</li>
+          <li>As someone planning short outings, I want precise timing of weather changes...</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>🔒 Privacy & Transparency (#6)</h2>
+        <ul>
+          <li>As a privacy-conscious user, I want transparent reporting of location access...</li>
+          <li>As someone who values control, I want clear privacy settings...</li>
+          <li>As a tech-savvy professional, I want confirmation that data isn't shared...</li>
+          <li>As a paying customer, I want to see my subscription status...</li>
+          <li>As someone who reads privacy policies, I want accessible information about data practices...</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>💼 Professional & Enterprise Features (#7)</h2>
+        <ul>
+          <li>As an event planner, I want long-range forecasts with probability ranges...</li>
+          <li>As a professional making costly decisions, I want confidence levels displayed...</li>
+          <li>As someone planning outdoor events, I want historical weather data...</li>
+          <li>As someone managing logistics, I want specific data points like wind speeds...</li>
+          <li>As a professional user, I want to save venue locations...</li>
+          <li>As a planner comparing venues, I want to see typical weather patterns...</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>📆 Calendar & Activity Integration (#8)</h2>
+        <ul>
+          <li>As a parent coordinating activities, I want calendar integration...</li>
+          <li>As someone managing kids' sports, I want advance notice of likely cancellations...</li>
+          <li>As a busy parent, I want proactive alerts about schedule impacts...</li>
+          <li>As a planner managing client expectations, I want honest probability ranges...</li>
+          <li>As a business user, I want to track how forecasts change over time...</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>📱 Personalization & Predictive Intelligence (#9)</h2>
+        <ul>
+          <li>As someone with a regular schedule, I want the app to understand my routine...</li>
+          <li>As a user, I want plain language weather summaries...</li>
+          <li>As a tech-savvy user, I want the app to learn my routines using AI...</li>
+          <li>As someone with regular activities, I want predictive notifications...</li>
+          <li>As a data-oriented user, I want specific metrics rather than vague descriptions...</li>
+          <li>As someone who values efficiency, I want the app to understand my patterns...</li>
+          <li>As a tech enthusiast, I want to see multiple weather model predictions...</li>
+          <li>As a data-driven user, I want access to advanced metrics like atmospheric pressure...</li>
+          <li>As someone who understands forecasting, I want confidence intervals displayed...</li>
+          <li>As a user who likes customization, I want progressive disclosure of information...</li>
+          <li>As someone comparing models, I want to choose preferred data sources...</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>WeatherWise — User Stories by Feature — © <span id="year"></span>. <span style="color:var(--muted)">Privacy · Terms</span></div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
