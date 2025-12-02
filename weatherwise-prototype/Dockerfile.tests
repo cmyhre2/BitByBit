@@ -1,0 +1,14 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY backend/ ./backend/
+COPY tests/ ./tests/
+
+# Add backend folder to Python path
+ENV PYTHONPATH="/app:${PYTHONPATH}"
+
+RUN pip install --no-cache-dir -r backend/requirements.txt
+RUN pip install --no-cache-dir -r tests/requirements.txt
+
+CMD ["pytest", "-v", "--disable-warnings", "--maxfail=1"]

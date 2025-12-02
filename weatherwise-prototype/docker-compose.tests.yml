@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  weatherwise-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile.tests
+    environment:
+      - OPENWEATHER_API_KEY=dummy
+    restart: "no"
